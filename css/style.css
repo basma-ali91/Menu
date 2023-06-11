@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora:wght@500&family=Roboto:wght@500&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: "Lora";
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAFAFA;
+}
+
+:root {
+    --mainColor: #EA840D;
+}
+
+/* start home section */
+#home {
+    background: url('../images/home.png') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Lora";
+
+}
+
+#home .navbar {
+    justify-content: space-between !important;
+}
+
+#home nav .navbar-brand {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+    cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i {
+    font-size: 1.1rem;
+}
+
+#home nav form .form-control {
+    background-color: var(--mainColor);
+    border-color: #fff !important;
+    border-radius: .7rem;
+}
+
+#home nav form .form-control::placeholder {
+    color: #fff;
+    font-family: "";
+}
+
+#home .homeContent {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .homeContent .homeInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .homeContent .homeInfo h1 {
+    font-size: 7rem;
+    font-family: "Lora";
+}
+
+#home .homeContent .homeInfo div {
+    display: flex;
+}
+
+
+
+#home .homeContent .homeInfo .homebtn button {
+    color: #EA840D;
+    border-radius: 1.5rem;
+    background-color: #fff;
+    border-color: #EA840D;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+}
+
+#home .homeContent .homeInfo .homebtn button:hover {
+    color: #fff;
+    background-color: #EA840D;
+    border-color: #fff;
+
+}
+
+#home .homeContent .homeSlider .carousel-indicators {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    margin-right: 1rem;
+    list-style: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+#home .homeContent .homeSlider img {
+    width: 100%;
+    height: 100%;
+}
+
+#home .buttons {
+    font-family: "";
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+#home .buttons a {
+    color: #000;
+    text-decoration: none;
+}
+
+#home .buttons a img {
+    width: 30px;
+    height: 30px;
+}
+
+#home .buttons a span {
+    font-family: 'Roboto';
+    display: inline-block;
+    margin-left: .7rem;
+}
+
+/* end home section */
+
+/* start login section */
+
+#fixedBox,
+#fixedBox1 {
+    color: #fff;
+    font-family: "Lora";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 999;
+}
+
+.logIn,
+.signUp {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    border-top-left-radius: 50px;
+}
+
+.loginheader,
+.SignUpheader {
+    font-size: 1.4rem;
+    font-family: 'Inter';
+    margin-bottom: 6rem;
+
+}
+
+.LogIncontent,
+.SignUpcontent {
+    background-color: var(--mainColor);
+    padding: 2rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+.LogIncontent h2,
+.SignUpcontent h2 {
+    margin-bottom: 2rem;
+}
+
+.LogIncontent input,
+.SignUpcontent input {
+    padding: .7rem 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none !important;
+    margin-bottom: .1rem;
+}
+
+.LogIncontent input::placeholder,
+.SignUpcontent input::placeholder {
+    color: #fff;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.LogIncontent .ip1 input,
+.SignUpcontent .ip1 input {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.LogIncontent .ip2 input,
+.SignUpcontent .ip2 input {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.LogIncontent .img,
+.SignUpcontent .img {
+    width: 60px;
+    height: 60px;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+/* .LogInImg {
+    background-color: #fff;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+} */
+
+.LogInImg img,
+.SignUpImg img {
+    width: 100%;
+    height: 100%;
+}
+
+/* end login section */
+
+/* start foodPopular section */
+#foodPopular,
+#burger {
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#foodPopular h2,
+#cat h2,
+#burger h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-family: "Lora";
+}
+
+#foodPopular .foodSlider {
+    margin: auto;
+}
+
+#foodPopular .foodSlider .card {
+    border-radius: 2.5rem !important;
+    background-color: #fff;
+    width: 90%;
+}
+
+#foodPopular .foodSlider .card img {
+    width: 200px;
+    height: 200px;
+}
+
+#foodPopular .foodSlider .card button {
+    background-color: #EA840D;
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Inter";
+}
+
+#foodPopular .foodSlider .owl-dots {
+    display: none;
+}
+
+#foodPopular .foodSlider .owl-nav .owl-prev span,
+#foodPopular .foodSlider .owl-nav .owl-next span {
+    color: #EA840D;
+    font-size: 5rem;
+    position: absolute;
+}
+
+#foodPopular .foodSlider .owl-nav .owl-prev span {
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#foodPopular .foodSlider .owl-nav .owl-next span {
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* end foodPopular section */
+
+/* start adv section */
+#adv{
+    background-color: var(--mainColor);
+    color: #000;
+    margin: 7rem 0;
+}
+#adv .position-absolute{
+    right: 0;
+    top: -19%;
+    transform: translateY(8%);
+}
+#adv p {
+    font-family: "Lora";
+    font-size: 2rem;
+    padding: 5rem 0;
+    font-weight: 900;
+}
+#adv button{
+    background-color: #000;
+    color: #fff;
+    font-size: .5rem;
+    padding: 0 1.3rem;
+    margin-left: 1.5rem;
+}
+
+#adv button img{
+    width: 25px;
+    height: 25px;
+}
+#adv button span{
+    display: block;
+    font-weight: bold;
+    font-size: .7rem;
+    padding-left: .7rem;
+}
+#adv .position-absolute img {
+    width: 81%;
+    height: 50%;
+}
+
+/* end avd section */
+
+/* start cat section */
+#cat {
+    font-family: "Lora";
+}
+
+/* end cat section */
+#burger .burgerList {
+    margin-bottom: 3rem;
+}
+
+#burger .burgerList .nav .nav-item {
+    border: 1px solid #EA840D;
+    margin: 1rem;
+    border-radius: 12px;
+}
+
+#burger .burgerList .nav .nav-item:hover {
+    background-color: #EA840D;
+}
+
+#burger .burgerList .nav .nav-item .nav-link {
+    color: #000000;
+    padding: .5rem 1.75rem;
+    font-weight: 400;
+}
+
+#burger .burgerList .nav .nav-item .nav-link:hover {
+    color: #ffffff;
+}
+
+#burger .burgerCards .card {
+    border-radius: 1.9rem;
+}
+
+#burger .burgerCards .card:hover {
+    border-color: #EA840D;
+    border-width: 3px;
+}
+
+#burger .burgerCards .card .cardIcon {
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+#burger .burgerCards .card .cardIcon i {
+    color: red;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#burger .burgerCards .card img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#burger .burgerCards .card .card-text {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* #burger .burgerCards .card:hover  .card-text{
+    color: #fff;
+} */
+
+
+/* start footer section */
+footer {
+    background-color: #000000;
+    height: 300px;
+
+}
+
+/* end footer section */

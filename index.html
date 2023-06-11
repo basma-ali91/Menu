@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- start home section -->
+    <section id="home">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div>
+                    <button class="navbar-brand" id="LogIn">Log in</button>
+                    <button class="navbar-brand" href="" id="SignUp">Sign Up</button>
+                </div>
+                <div class="d-flex">
+                    <form>
+                        <input class="form-control" type="search" placeholder=" Search" aria-label="Search">
+                    </form>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" herf="#"><i class="fas fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="homeContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="homeInfo">
+                            <h1>S<span id="element"></span></h1>
+                            <div>
+                                <p class="me-5">Every weekend</p>
+                                <p class="ms-5"> <i class="fas fa-phone-alt"></i> 01100272451</p>
+                            </div>
+                            <div>
+                                <p class="me-5">9 Am - 8 Am</p>
+                                <p class="ms-5">menu@com</p>
+                            </div>
+                            <div class="homebtn">
+                                <button class="btn">download app</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="homeSlider">
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="buttons text-center">
+            <div class="cat">
+                <a href="#cat" class="d-inline-block mx-5"> <img src="images/image 25.png"> <span> Categories</span>
+                </a>
+                <a href="" class="d-inline-block mx-5"> <img src="images/image 24.png"> <span> QR code</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- end home section -->
+
+
+    <!-- start logIn card -->
+    <section id="fixedBox" class="w-100 vh-100 d-none">
+        <div class="logIn">
+
+            <div class="LogIncontent w-50">
+                <div class="d-flex justify-content-between loginheader">
+                    <span id="close" style="cursor: pointer;"><i class="fas fa-times"></i></span>
+                    <p style="color: rgba(255, 255, 255, 0.6);cursor: pointer;">Create Account</p>
+                </div>
+
+                <h2 class="text-center">Welcome!</h2>
+                <div class="w-50 m-auto">
+                    <div class="ip1">
+                        <input type="text" placeholder="User name" class="form-control">
+                    </div>
+                    <div class="ip2">
+                        <input type="password" placeholder="*********" class="form-control">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p>Forget password?</p>
+                    <p>Or</p>
+                </div>
+
+                <div class="img">
+                    <img src="images/Google.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="LogInImg w-50">
+                <div class="h-100">
+                    <img src="images/image 28.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end logIn card -->
+
+    <!-- start signUp card -->
+    <section id="fixedBox1" class="w-100 vh-100 d-none">
+        <div class="signUp">
+
+            <div class="SignUpcontent w-50">
+                <div class="d-flex justify-content-between SignUpheader">
+                    <span id="close1" style="cursor: pointer;"><i class="fas fa-times"></i></span>
+                </div>
+
+                <h2 class="text-center">Create Account</h2>
+                <div class="w-50 m-auto">
+                    <div class="ip1">
+                        <input type="text" placeholder="User name" class="form-control">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email address" class="form-control">
+                    </div>
+                    <div class="ip2">
+                        <input type="password" placeholder="*********" class="form-control">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p>Or</p>
+                </div>
+
+                <div class="img">
+                    <img src="images/Google.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="LogInImg w-50">
+                <div class="h-100">
+                    <img src="images/image 28.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end signUp card -->
+
+    <!-- start food popular section -->
+    <section id="foodPopular">
+        <div class="container">
+
+            <div class="foodPopularHeader">
+                <h2>Popular food</h2>
+            </div>
+
+            <div class="foodSlider">
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item">
+                        <div class="card pb-3">
+                            <img src="images/image 1.png" class="d-block w-100" alt="...">
+                            <p class="ps-5">Cheese burger</p>
+                            <div class="d-flex  justify-content-evenly align-items-center">
+                                <span>$10.00</span>
+                                <div><button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                        Add</button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card pb-3">
+                            <img src="images/image 2.png" class="d-block w-100" alt="...">
+                            <p class="ps-5">Cheese burger</p>
+                            <div class="d-flex  justify-content-evenly align-items-center">
+                                <span>$10.00</span>
+                                <div><button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                        Add</button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card pb-3">
+                            <img src="images/image 3.png" class="d-block w-100" alt="...">
+                            <p class="ps-5">Cheese burger</p>
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <span>$10.00</span>
+                                <div><button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                        Add</button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card pb-3">
+                            <img src="images/image 4.png" class="d-block w-100" alt="...">
+                            <p class="ps-5">Cheese burger</p>
+                            <div class="d-flex justify-content-evenly align-items-center">
+                                <span>$10.00</span>
+                                <div><button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                        Add</button></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card pb-3">
+                            <img src="images/image 1.png" class="d-block w-100" alt="...">
+                            <p class="ps-5">Cheese burger</p>
+                            <div class="d-flex  justify-content-evenly align-items-center">
+                                <span>$10.00</span>
+                                <div>
+                                    <button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                        Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card pb-3">
+                            <img src="images/image 2.png" class="d-block w-100" alt="...">
+                            <p class="ps-5">Cheese burger</p>
+                            <div class="d-flex   justify-content-evenly align-items-center">
+                                <span>$10.00</span>
+                                <div>
+                                    <button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                        Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card pb-3">
+                            <img src="images/image 3.png" class="d-block w-100" alt="...">
+                            <p class="ps-5">Cheese burger</p>
+                            <div class="d-flex  justify-content-evenly align-items-center">
+                                <span>$10.00</span>
+                                <div>
+                                    <button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                        Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end food popular section -->
+
+    <!-- start adv section -->
+    <section id="adv" class="position-relative">
+       
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6 pb-5">
+                        <p>Now With Your Favorite QR Menu Mobile Application In Your Pocket</p>
+                        <button class="btn rounded-pill"> <img src="images/Vector.png" alt="" > Download on ios <span>App Store</span></button>
+                        <button class="btn rounded-pill"> <img src="images/Google play.png" alt=""> Get it on <span>Google Play</span></button>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="position-absolute"  >
+                            <img src="images/adv.png" alt="" data-aos="slide-up">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+       
+    </section>
+    <!-- start adv section -->
+
+
+
+    <!-- start Categories section -->
+    <section id="cat">
+        <div class="container">
+            <div class="catHeader">
+                <h2>Categories</h2>
+            </div>
+        </div>
+    </section>
+    <!-- end Categories section -->
+
+    <!-- start burger section -->
+    <section id="burger">
+        <div class="container">
+            <div class="burgerHeader">
+                <h2>Burger</h2>
+            </div>
+            <div class="burgerList">
+
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beef</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chicken</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cheese</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="burgerCards">
+                <div class="row mb-3">
+                    <div class="col-md-4">
+
+                        <div class="card mb-3">
+                            <div class="text-center">
+                                <img src="images/image 1.png" class="card-img-top" alt="...">
+                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                            </div>
+
+                            <div class="card-body ps-4">
+                                <h5 class="card-title ">Burger</h5>
+                                <p class="card-text">meat, cheder, tomato, mozzarela,
+                                    BBQ souce</p>
+                                <div class="d-flex">
+                                    <p class="fw-bold">$10.00</p>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card  mb-3">
+                            <div class="text-center">
+                                <img src="images/image 5.png" class="card-img-top" alt="...">
+                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="card-body ps-4">
+                                <h5 class="card-title">Burger</h5>
+                                <p class="card-text">meat, cheder, tomato, mozzarela,
+                                    BBQ souce</p>
+                                <div class="d-flex">
+                                    <p class="fw-bold">$10.00</p>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="card  mb-3">
+                            <div class="text-center">
+                                <img src="images/image 4.png" class="card-img-top" alt="...">
+                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="card-body ps-4">
+                                <h5 class="card-title">Burger</h5>
+                                <p class="card-text">meat, cheder, tomato, mozzarela,
+                                    BBQ souce</p>
+                                <div class="d-flex">
+                                    <p class="fw-bold">$10.00</p>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="card  mb-3">
+                            <div class="text-center">
+                                <img src="images/image 1.png" class="card-img-top" alt="...">
+                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                            </div>
+
+                            <div class="card-body ps-4">
+                                <h5 class="card-title ">Burger</h5>
+                                <p class="card-text">meat, cheder, tomato, mozzarela,
+                                    BBQ souce</p>
+                                <div class="d-flex">
+                                    <p class="fw-bold">$10.00</p>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="card  mb-3">
+                            <div class="text-center">
+                                <img src="images/image 5.png" class="card-img-top" alt="...">
+                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="card-body ps-4">
+                                <h5 class="card-title">Burger</h5>
+                                <p class="card-text">meat, cheder, tomato, mozzarela,
+                                    BBQ souce</p>
+                                <div class="d-flex">
+                                    <p class="fw-bold">$10.00</p>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="card  mb-3">
+                            <div class="text-center">
+                                <img src="images/image 4.png" class="card-img-top" alt="...">
+                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                            </div>
+                            <div class="card-body ps-4">
+                                <h5 class="card-title">Burger</h5>
+                                <p class="card-text">meat, cheder, tomato, mozzarela,
+                                    BBQ souce</p>
+                                <div class="d-flex">
+                                    <p class="fw-bold">$10.00</p>
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end burger section -->
+
+
+    <!-- start footer section -->
+    <footer class="text-white">
+        <div class="container">
+            <p>contact</p>
+            <hr>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

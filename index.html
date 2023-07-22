@@ -8,6 +8,8 @@
     <title>Menu</title>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -22,28 +24,29 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <div>
+                <div  class="reg">
                     <button class="navbar-brand" id="LogIn">Log in</button>
-                    <button class="navbar-brand" href="" id="SignUp">Sign Up</button>
+                    <button class="navbar-brand" id="SignUp">Sign Up</button>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex justify-content-center formser" >
                     <form>
-                        <input class="form-control" type="search" placeholder=" Search" aria-label="Search">
+                        <input class="form-control" type="search" placeholder=" Search" aria-label="Search" id="search">
                     </form>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
+                </button> -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
+                   >
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item" id="favcart">
                             <a class="nav-link" herf="#"><i class="fas fa-heart"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        <li class="nav-item" id="showcart">
+                            <a class="nav-link"><i class="fas fa-shopping-cart"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
@@ -51,6 +54,32 @@
                     </ul>
 
                 </div>
+
+                <div class="res">
+
+                    <div class="open ">
+                        <span class="fs-3 icon">&#9776;</span>
+                        <span class="fs-3 icon2">&times;</span>
+                      </div>
+                  
+                      <div class="sidenav">
+                        
+                        <div class="items">
+                          <ul>
+                            <li class="item1"><a class="itemlink" href="#">Log in</a></li>
+                            <li class="item2"><a class="itemlink" href="#">Sign Up</a></li>
+                            <li class="item3"><a class="itemlink" href="#"><i class="fas fa-heart"></i></a></li>
+                            <li class="item5"><a class="itemlink" href="#"></a></li>
+                            <li class="item6"><a class="itemlink" href="#">upcoming</a></li>
+                          </ul>
+                        </div>
+                  
+                       
+                  
+                      </div>
+                </div>
+
+              
             </div>
         </nav>
 
@@ -61,16 +90,16 @@
                     <div class="col-md-6">
                         <div class="homeInfo">
                             <h1>S<span id="element"></span></h1>
-                            <div>
+                            <!-- <div>
                                 <p class="me-5">Every weekend</p>
                                 <p class="ms-5"> <i class="fas fa-phone-alt"></i> 01100272451</p>
                             </div>
                             <div>
                                 <p class="me-5">9 Am - 8 Am</p>
                                 <p class="ms-5">menu@com</p>
-                            </div>
+                            </div> -->
                             <div class="homebtn">
-                                <button class="btn">download app</button>
+                                <button class="btn">Download App</button>
                             </div>
                         </div>
                     </div>
@@ -94,18 +123,23 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                        <span>20%</span>
                                     </div>
                                     <div class="carousel-item">
                                         <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                        <span>20%</span>
                                     </div>
                                     <div class="carousel-item">
                                         <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                        <span>20%</span>
                                     </div>
                                     <div class="carousel-item">
                                         <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                        <span>20%</span>
                                     </div>
                                     <div class="carousel-item">
                                         <img src="images/homeimg.png" class="d-block w-100" alt="...">
+                                        <span>20%</span>
                                     </div>
                                 </div>
                             </div>
@@ -211,6 +245,36 @@
     </section>
     <!-- end signUp card -->
 
+    <!-- start QR section -->
+    <section id="Qr" class="w-100 vh-100 d-none align-items-center">
+        <div class="container">
+
+            <div id="smallCard">
+                <div class="">
+                    <span id="close2" style="cursor: pointer;"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="text-center ">
+                    <p class="par">You can scan by QR to
+                        <br />view the menu
+                    </p>
+                    <img src="images/image 19.png" alt="">
+                    <p class="par">The QR code will be automatically detected<br />
+                        when you position it between the guide lines</p>
+                </div>
+
+                <div class="text-center ">
+                    <p class="mt-4">Or enter code</p>
+                    <input type="text" class="form-control w-25 m-auto mb-2" placeholder="Enter Code">
+                    <button class="btn w-25">Show Menu</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end QR section -->
+
+
+
     <!-- start food popular section -->
     <section id="foodPopular">
         <div class="container">
@@ -228,7 +292,8 @@
                             <p class="ps-5">Cheese burger</p>
                             <div class="d-flex  justify-content-evenly align-items-center">
                                 <span>$10.00</span>
-                                <div><button class="btn"><i class="fas fa-shopping-cart d-inline-block me-2"></i>
+                                <div><button class="btn">
+                                        <i class="fas fa-shopping-cart d-inline-block me-2"></i>
                                         Add</button></div>
                             </div>
                         </div>
@@ -321,25 +386,27 @@
 
     <!-- start adv section -->
     <section id="adv" class="position-relative">
-       
-            <div class="container">
 
-                <div class="row">
-                    <div class="col-md-6 pb-5">
-                        <p>Now With Your Favorite QR Menu Mobile Application In Your Pocket</p>
-                        <button class="btn rounded-pill"> <img src="images/Vector.png" alt="" > Download on ios <span>App Store</span></button>
-                        <button class="btn rounded-pill"> <img src="images/Google play.png" alt=""> Get it on <span>Google Play</span></button>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="position-absolute"  >
-                            <img src="images/adv.png" alt="" data-aos="slide-up">
-                        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 pb-5">
+                    <p>Now With Your Favorite QR Menu Mobile Application In Your Pocket</p>
+                    <button class="btn rounded-pill"> <img src="images/Vector.png" alt=""> Download on ios <span>App
+                            Store</span></button>
+                    <button class="btn rounded-pill"> <img src="images/Google play.png" alt=""> Get it on <span>Google
+                            Play</span></button>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="position-absolute">
+                        <img src="images/adv.png" alt="" data-aos="slide-up">
                     </div>
                 </div>
-
             </div>
 
-       
+        </div>
+
+
     </section>
     <!-- start adv section -->
 
@@ -348,9 +415,22 @@
     <!-- start Categories section -->
     <section id="cat">
         <div class="container">
+
             <div class="catHeader">
                 <h2>Categories</h2>
             </div>
+
+          
+
+            <div class="center">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+              </div>
+
         </div>
     </section>
     <!-- end Categories section -->
@@ -384,20 +464,43 @@
                 <div class="row mb-3">
                     <div class="col-md-4">
 
-                        <div class="card mb-3">
+                        <div class="card mb-3 h-100">
                             <div class="text-center">
+                                <span id="discount">20%</span>
                                 <img src="images/image 1.png" class="card-img-top" alt="...">
-                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon d-none fav"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon favsolid"><i class="fas fa-heart"></i></span>
                             </div>
 
                             <div class="card-body ps-4">
-                                <h5 class="card-title ">Burger</h5>
+                                <h5 class="card-title">Burger</h5>
                                 <p class="card-text">meat, cheder, tomato, mozzarela,
                                     BBQ souce</p>
-                                <div class="d-flex">
-                                    <p class="fw-bold">$10.00</p>
-                                    <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="itemPrice">
+                                        <div class="d-flex">
+                                            $
+                                            <p class="fw-bold" style="text-decoration: line-through; padding: 0;margin: 0;">
+                                                 10.00</p>
+                                        </div>
+                                       
+                                        <p class="text-success" style="padding: 0;margin: 0;">$ 8</p>
+                                    </div>
 
+
+                                    <div style="color: black; ">
+                                        <button class="btn d-flex  justify-content-end align-items-center"
+                                            style="border: 1px solid #EA840D;border-radius: 32px;">
+                                            <div class="d-flex">
+                                                <span class="minus me-2">-</span>
+                                                <span class="num">01</span>
+                                                <span class="pos d-inline-block me-2 ms-2">+</span>
+                                            </div>
+                                            <div class="addcart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -407,19 +510,35 @@
 
                     <div class="col-md-4">
 
-                        <div class="card  mb-3">
+                        <div class="card  mb-3 h-100">
                             <div class="text-center">
                                 <img src="images/image 5.png" class="card-img-top" alt="...">
-                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon fav"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon d-none favsolid"><i class="fas fa-heart"></i></span>
                             </div>
                             <div class="card-body ps-4">
                                 <h5 class="card-title">Burger</h5>
                                 <p class="card-text">meat, cheder, tomato, mozzarela,
                                     BBQ souce</p>
-                                <div class="d-flex">
-                                    <p class="fw-bold">$10.00</p>
-                                    <div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="itemPrice d-flex">
+                                       $ <p class="fw-bold">10.00</p>
+                                    </div>
 
+
+                                    <div style="color: black; ">
+                                        <button class="btn d-flex  justify-content-end align-items-center"
+                                            style="border: 1px solid #EA840D;border-radius: 32px;">
+                                            <div class="d-flex">
+                                                <span class="minus me-2">-</span>
+                                                <span class="num">01</span>
+                                                <span class="pos d-inline-block me-2 ms-2">+</span>
+                                            </div>
+                                            <div class="addcart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -430,19 +549,35 @@
 
                     <div class="col-md-4">
 
-                        <div class="card  mb-3">
+                        <div class="card mb-3 h-100">
                             <div class="text-center">
                                 <img src="images/image 4.png" class="card-img-top" alt="...">
-                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon fav"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon d-none favsolid"><i class="fas fa-heart"></i></span>
                             </div>
                             <div class="card-body ps-4">
                                 <h5 class="card-title">Burger</h5>
                                 <p class="card-text">meat, cheder, tomato, mozzarela,
                                     BBQ souce</p>
-                                <div class="d-flex">
-                                    <p class="fw-bold">$10.00</p>
-                                    <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="itemPrice d-flex">
+                                        $<p class="fw-bold">10.00</p>
+                                    </div>
 
+
+                                    <div style="color: black; ">
+                                        <button class="btn d-flex  justify-content-end align-items-center"
+                                            style="border: 1px solid #EA840D;border-radius: 32px;">
+                                            <div class="d-flex">
+                                                <span class="minus me-2">-</span>
+                                                <span class="num">01</span>
+                                                <span class="pos d-inline-block me-2 ms-2">+</span>
+                                            </div>
+                                            <div class="addcart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -455,20 +590,38 @@
                 <div class="row">
                     <div class="col-md-4">
 
-                        <div class="card  mb-3">
+                        <div class="card  mb-3 h-100">
                             <div class="text-center">
                                 <img src="images/image 1.png" class="card-img-top" alt="...">
-                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon fav"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon d-none favsolid"><i class="fas fa-heart"></i></span>
                             </div>
 
                             <div class="card-body ps-4">
                                 <h5 class="card-title ">Burger</h5>
                                 <p class="card-text">meat, cheder, tomato, mozzarela,
                                     BBQ souce</p>
-                                <div class="d-flex">
-                                    <p class="fw-bold">$10.00</p>
-                                    <div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="itemPrice d-flex">
 
+                                        $<p class="fw-bold" style="padding: 0; margin: 0;">10.00</p>
+                                    </div>
+
+
+
+                                    <div style="color: black; ">
+                                        <button class="btn d-flex  justify-content-end align-items-center"
+                                            style="border: 1px solid #EA840D;border-radius: 32px;">
+                                            <div class="d-flex">
+                                                <span class="minus me-2">-</span>
+                                                <span class="num">01</span>
+                                                <span class="pos d-inline-block me-2 ms-2">+</span>
+                                            </div>
+                                            <div class="addcart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -478,19 +631,36 @@
 
                     <div class="col-md-4">
 
-                        <div class="card  mb-3">
+                        <div class="card  mb-3 h-100">
                             <div class="text-center">
-                                <img src="images/image 5.png" class="card-img-top" alt="...">
-                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                                <img src="images/image 1.png" class="card-img-top" alt="...">
+                                <span class="cardIcon fav"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon d-none favsolid"><i class="fas fa-heart"></i></span>
                             </div>
+
                             <div class="card-body ps-4">
-                                <h5 class="card-title">Burger</h5>
+                                <h5 class="card-title ">Burger</h5>
                                 <p class="card-text">meat, cheder, tomato, mozzarela,
                                     BBQ souce</p>
-                                <div class="d-flex">
-                                    <p class="fw-bold">$10.00</p>
-                                    <div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="itemPrice d-flex">
+                                        $<p class="fw-bold" style="padding: 0; margin: 0;">10.00</p>
+                                    </div>
 
+
+                                    <div style="color: black; ">
+                                        <button class="btn d-flex  justify-content-end align-items-center"
+                                            style="border: 1px solid #EA840D;border-radius: 32px;">
+                                            <div class="d-flex">
+                                                <span class="minus me-2">-</span>
+                                                <span class="num">01</span>
+                                                <span class="pos d-inline-block me-2 ms-2">+</span>
+                                            </div>
+                                            <div class="addcart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -498,22 +668,44 @@
 
                     </div>
 
-
                     <div class="col-md-4">
 
-                        <div class="card  mb-3">
+                        <div class="card mb-3 h-100">
                             <div class="text-center">
-                                <img src="images/image 4.png" class="card-img-top" alt="...">
-                                <span class="cardIcon"><i class="far fa-heart"></i></span>
+                                <span id="discount">20%</span>
+                                <img src="images/image 1.png" class="card-img-top" alt="...">
+                                <span class="cardIcon d-none fav"><i class="far fa-heart"></i></span>
+                                <span class="cardIcon favsolid"><i class="fas fa-heart"></i></span>
                             </div>
+
                             <div class="card-body ps-4">
-                                <h5 class="card-title">Burger</h5>
+                                <h5 class="card-title ">Burger</h5>
                                 <p class="card-text">meat, cheder, tomato, mozzarela,
                                     BBQ souce</p>
-                                <div class="d-flex">
-                                    <p class="fw-bold">$10.00</p>
-                                    <div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="itemPrice">
+                                        <div class="d-flex">
+                                            $
+                                            <p class="fw-bold" style="text-decoration: line-through; padding: 0;margin: 0;">
+                                                 10.00</p>
+                                        </div>
+                                       
+                                        <p class="text-success" style="padding: 0;margin: 0;">$ 8</p>
+                                    </div>
 
+                                    <div style="color: black; ">
+                                        <button class="btn d-flex  justify-content-end align-items-center"
+                                            style="border: 1px solid #EA840D;border-radius: 32px;">
+                                            <div class="d-flex">
+                                                <span class="minus me-2">-</span>
+                                                <span class="num">01</span>
+                                                <span class="pos d-inline-block me-2 ms-2">+</span>
+                                            </div>
+                                            <div class="addcart">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </div>
+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -528,11 +720,189 @@
     <!-- end burger section -->
 
 
+    <!-- start cart Section -->
+
+    <section id="cart" class="w-100 vh-100">
+        <div class="container">
+
+            <div class="cartSmall">
+
+                <div class="cartIcon d-flex justify-content-end position-relative">
+
+                    <i class="fas fa-shopping-cart" style="cursor:pointer"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle "
+                        style="background-color: #EA840D;font-size: 1em;" id="itemlength">
+                        0
+                    </span>
+
+                </div>
+
+                <div class="cartHeader">
+                    <div class="arrowicon w-50" id="arrowIcon">
+                        <i class="fas fa-arrow-left" style="cursor:pointer"></i>
+                    </div>
+
+                    <div class="header">
+                        <h2>Basket</h2>
+                    </div>
+                </div>
+
+                <div class="cartItems">
+                    <div id="empty" style="text-align: center; font-weight: 600;font-size: 2rem;">YOUR CART IS EMPTY
+                    </div>
+                    <div class="row" id="cartItem">
+                        <div class="col-md-8">
+
+                            <table class="table">
+                                <thead>
+                                    <th></th>
+                                    <th>Order</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                </thead>
+
+                                <tbody id="tbody">
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="totalInfo">
+
+                                <div class="btn-group mb-1" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="btnradio1">Cash</label>
+
+                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btnradio2">Visa</label>
+                                </div>
+
+                                <div class="totalPrice mb-1">
+                                    <div class="price d-flex justify-content-between">
+                                        <p>price</p>
+                                        <p id="Total_price"></p>
+                                    </div>
+                                </div>
+
+                                <div class="totalPrice mb-1">
+                                    <div class="price d-flex justify-content-between">
+                                        <p>Service</p>
+                                        <p>70$</p>
+                                    </div>
+                                </div>
+
+                                <div class="ServicePrice mb-1">
+                                    <div class="price d-flex justify-content-between">
+                                        <p>Total</p>
+                                        <p>1070$</p>
+                                    </div>
+                                </div>
+
+                                <button class="btn w-100 ">Check Out</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- end cart Section -->
+
+    <!-- start fav section -->
+    <section id="fav" class="w-100 h-100 ">
+        <div class="container">
+
+            <div class="cartSmall">
+                <div class="favHeader">
+                    <div class="arrowicon w-50" id="favarrowIcon">
+                        <i class="fas fa-arrow-left" style="cursor:pointer"></i>
+                    </div>
+
+                    <div class="header">
+                        <h2 style="color: black;">Favourite</h2>
+                    </div>
+                </div>
+
+                <div class="favCards">
+                    <div id="favempty" style="text-align: center; font-weight: 600;font-size: 2rem;">YOUR FAVOURITE IS
+                        EMPTY
+                    </div>
+                    <div class="row mb-3" id="favCards">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- end fav section -->
+
+
     <!-- start footer section -->
     <footer class="text-white">
         <div class="container">
-            <p>contact</p>
-            <hr>
+
+            <div class="footerinfo">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footerarrow ">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <div class="footerTitle">
+                           <h3>Contact</h3>
+                        </div>
+
+                        <div class="footerContact">
+                            <p>+201100272451</p>
+                                <p>menu@com</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <div class="footerarrow">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <div class="footerTitle">
+                           <h3>FollowUs</h3>
+                        </div>
+
+                        <div class="footerContactLinks">
+                            <p><a href="">Instagram</a></p>
+                            <p><a href="">Facebook</a></p>
+                            <p><a href="">Twitter</a></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-4">
+                        
+                        <div class="footerarrow">
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <div class="footerTitle">
+                           <h3>Legal</h3>
+                        </div>
+
+                        <div class="footerContact">
+                            <p>website by <span style="font-weight: bolder;">Fourth Pyramid</span><br>
+                                @2023.all rights reserved</p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
         </div>
     </footer>
     <!-- end footer section -->
@@ -541,6 +911,7 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
